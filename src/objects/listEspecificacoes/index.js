@@ -10,7 +10,6 @@ export default function ListEspecificacoes(){
     return (
       <View>
         <Text style={styles.name}>{item.name}</Text>
-        <Text style={styles.descricao}>{item.description}</Text>
       </View>
     );
   };

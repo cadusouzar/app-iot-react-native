@@ -10,6 +10,9 @@ const styles = StyleSheet.create({
     backgroundColor: secondColor,
     height: "7%",
   },
+  lastIcon:{
+    borderRadius: 100
+  }
 });
 
 export default styles

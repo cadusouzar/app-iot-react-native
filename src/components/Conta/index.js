@@ -6,17 +6,16 @@ import Mensagem from '../../objects/mensagem'
 import RedirectButton from "../../objects/redirectButton";
 import Button from '../../objects/button-opacity'
 
-export default function Conta({navigation}) {
-  const src = require('../../images/device.png');
+export default function Conta({navigation, nomeLogado}) {
+  const src = require('../../images/account.png');
 
   return (
     <View>
       <ReturnButton texto="Perfil" handlePress={() => navigation.goBack()}/>
       <FotoConta source={src} />
-      <Mensagem texto="Meu nome"/>
-      <Mensagem texto="Meu Endereco"/>
+      <Mensagem texto={nomeLogado}/>
       <RedirectButton texto="Deseja trocar sua senha?"/>
-      <Button txtButton="Log Out"/>
+      <Button txtButton="Log Out" handlePress={() => navigation.navigate('Login')}/>
     </View>
   );
 }

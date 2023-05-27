@@ -1,19 +1,15 @@
 const imagens = [
   {
     id: 1,
-    source: require('../imagensCarrossel/device.png')
+    source: require('../imagensCarrossel/dispositivo-1.jpg')
   },
   {
     id: 2,
-    source: require('../imagensCarrossel/device1.png')
+    source: require('../imagensCarrossel/dispositivo-2.jpg')
   },
   {
     id: 3,
-    source: require('../imagensCarrossel/device2.png')
-  },
-  {
-    id: 4,
-    source: require('../imagensCarrossel/device3.png')
+    source: require('../imagensCarrossel/dispositivo-3.jpg')
   },
 ]
 

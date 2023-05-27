@@ -4,21 +4,24 @@ import styles from './style'
 import ContainerMiddle from '../../../objects/container-middle'
 import ButtonLogin from "../../../objects/buttonLogin";
 import api from '../../../services/api'
-import axios from "axios";
+
 export default function Login({ navigation }) {
   const [login, setLogin] = useState('');
   const [senha, setSenha] = useState('');
+  const [nomeLogado, setNomeLogado] = useState('')
 
   const dismissKeyboard = () => {
     Keyboard.dismiss();
   };
   
   function goLogin() {
-
-    api.post(`https://simiapi.azurewebsites.net/Usuario/Validar?login=${login}&senha=${senha}`)
+    api.post(`Usuario/Validar?login=${login}&senha=${senha}`)
     .then((resp) => {
-      console.log(resp.data)
-      navigation.navigate("Home");
+      setNomeLogado(resp.data.nome)
+      navigation.navigate("Home", {nomeLogado: nomeLogado});
+      setLogin('')
+      setSenha('')
+
     })
     .catch((err)=> {
       console.log(err)

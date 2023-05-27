@@ -11,7 +11,7 @@ export default function Carrossel() {
   const renderItem = ({ item }) => {
     return (
       <View style={styles.containerImagem}>
-        <Image source={item.source}/>
+        <Image style={{width: 350, height: 350}} source={item.source}/>
       </View>
     );
   };
