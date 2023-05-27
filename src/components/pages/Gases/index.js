@@ -36,7 +36,7 @@ export default function Gases({navigation}){
     <ReturnButton texto="Sensor de gases" handlePress={() =>  navigation.goBack()}/>
     {gasMedido? (
       <ValorMedido texto={gasMedido.toString()}/>
-    ): <ValorMedido texto="Erro ao buscar"/>}
+    ): <ValorMedido texto="Sem presença de gás"/>}
 
     <View style={{flexDirection: "row", justifyContent: "space-around"}}>
       <LottieView 
