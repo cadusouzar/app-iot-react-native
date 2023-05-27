@@ -21,10 +21,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.cadusouzar.appiot"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "owner": "cadusouzar",
+    "extra": {
+      "eas": {
+        "projectId": "7550c22f-fae1-4b93-9ec7-b3d8a8eeae64"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/7550c22f-fae1-4b93-9ec7-b3d8a8eeae64"
     }
   }
 }

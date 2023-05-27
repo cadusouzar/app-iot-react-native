@@ -16,7 +16,7 @@ export default function Home({ navigation }) {
   
   return (
     <View style={styles.home}>
-      <Menu />
+      <Menu nome={nomeLogado}/>
       <Footer navigation={navigation} nome={nomeLogado}/>
     </View>
   );

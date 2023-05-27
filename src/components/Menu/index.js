@@ -7,7 +7,7 @@ import Mensagem from '../../objects/mensagem';
 import Button from '../../objects/button-opacity';
 
 
-export default function Menu() {
+export default function Menu({nome}) {
   const callFirefighters = () => {
     const phoneNumber = '193'; // Número dos bombeiros
 
@@ -16,7 +16,7 @@ export default function Menu() {
 
   return(
     <View>
-      <BoasVindas nome="buscar api"/>
+      <BoasVindas nome={nome}/>
       <Logo/>
       <Mensagem texto="Aqui podemos ter acesso aos valores medidos nos sensores de gases, também o de chamas"/>
       <Button txtButton="Chamar bombeiros" handlePress={callFirefighters}/>
